@@ -90,7 +90,7 @@ const LineChart = ({ chartData }) => {
     <section className="container">
       <div className="container__heading">
         <div className="icon">
-          <img src="/src/assets/icon.svg" alt="icon" />
+          <img src="/public/images/icon.svg" alt="icon" />
         </div>
         <h3 className="container__heading">Total Invoicing</h3>
       </div>
