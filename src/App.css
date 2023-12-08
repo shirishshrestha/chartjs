@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+.container__heading {
+  color: #0f1010;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8125rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-style: italic;
+}
+
+.icon {
+  background-color: #e6f4fa;
+  padding: 0.5rem;
+}
+
+.chart__section {
+  display: flex;
+  gap: 5.5rem;
+}
+
+.chart__section--data {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 0 0;
+  gap: 2rem;
+}
+
+.chart__section--number--first {
+  color: #0f1010;
+}
+
+.chart__section--number--second {
+  color: #0092cf;
+}
+
+.chart__section--number--third {
+  color: #c8a200;
+}
+.numbers__title--first,
+.numbers__title--second,
+.numbers__title--third {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3125rem;
+}
+
+.numbers__title--first {
+  color: #636969;
+}
+
+.numbers__cost--first,
+.numbers__cost--second,
+.numbers__cost--third {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.8125rem;
+}
+
+.numbers__cost--first span,
+.numbers__cost--second span,
+.numbers__cost--third span {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.percentage {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.percentage__digit {
+  padding: 4px 8px 4px 4px;
+  display: flex;
+  align-items: center;
+  background-color: #cfeed5;
+  color: #3a8348;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.percentage span {
+  color: #636969;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.percentage__icon {
+  font-size: 25px;
+  fill: #3a8348;
+}
+
+.line-chart {
+  height: auto;
+  width: 50rem;
+}
+
+@media (width<=1024px) {
+  .chart__section {
+    gap: 2rem;
+  }
+}
+
+@media (width<=850px) {
+  .chart__section {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .chart__section--data {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .line-chart {
+    width: 40rem;
+  }
+}
+
+@media (width<=500px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .chart__section--data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+  }
+}

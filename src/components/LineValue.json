@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "title": "Till Now",
+    "cost": 4.5,
+    "unit": "M",
+    "classId": "first"
+  },
+  {
+    "id": 1,
+    "title": "This Year",
+    "cost": 1.2,
+    "unit": "M",
+    "classId": "second"
+  },
+  {
+    "id": 2,
+    "title": "Last Year",
+    "cost": 780.4,
+    "unit": "K",
+    "classId": "third"
+  }
+]
